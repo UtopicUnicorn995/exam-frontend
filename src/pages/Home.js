@@ -172,7 +172,7 @@ export default function Home(){
         <h1 className="text-center mt-3" >Bogsy's Event House</h1>
         <h5 className="text-center mt-3 mb-3">Please choose an event or </h5>
         <Button variant="primary" className="mb-3" onClick={handleShow}>
-        Launch demo modal
+        Book an event
       </Button>
         <Accordion defaultActiveKey="0">
         {events}
@@ -189,7 +189,7 @@ export default function Home(){
 
 <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Book an event</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={(e) => bookNow(e)}>
